@@ -8,7 +8,7 @@ body {
 	color-scheme: light;
 	margin: 0;
 	background-color: #fbfbfb;
-	background-image: url("https://teaboom.ru/static/assets/images/transp_patttern.png?a76bebbb36d7&4cd942394a99");
+	background-image: url('https://teaboom.ru/static/assets/images/transp_patttern.png?a76bebbb36d7&4cd942394a99');
 	color: #444444;
 	font-family: 'Open Sans', Arial, Helvetica, sans-serif;
 	font-size: 14px;
@@ -36,6 +36,77 @@ body {
 
 	--col: 420px;
 	--col-gap: 30px;
+}
+
+.icon {
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+	background-color: currentColor;
+	-webkit-mask-size: contain;
+	mask-size: contain;
+	-webkit-mask-repeat: no-repeat;
+	mask-repeat: no-repeat;
+	-webkit-mask-position: center;
+	mask-position: center;
+	vertical-align: middle;
+	flex: none;
+}
+
+.icon--zoom {
+	width: 15px;
+	height: 15px;
+	background-color: #fff;
+	-webkit-mask-image: url('assets/zoom.svg');
+	mask-image: url('assets/zoom.svg');
+}
+
+.icon--review {
+	width: 17px;
+	height: 17px;
+	-webkit-mask-image: url('assets/review.svg');
+	mask-image: url('assets/review.svg');
+}
+
+.icon--heart {
+	width: 20px;
+	height: 20px;
+	-webkit-mask-image: url('assets/heart-outline.svg');
+	mask-image: url('assets/heart-outline.svg');
+}
+
+.favorite[aria-pressed='true'] .icon--heart {
+	-webkit-mask-image: url('assets/heart-filled.svg');
+	mask-image: url('assets/heart-filled.svg');
+}
+
+.icon--cart {
+	width: 21px;
+	height: 21px;
+	-webkit-mask-image: url('assets/cart.svg');
+	mask-image: url('assets/cart.svg');
+}
+
+.icon--arrow-left {
+	width: 7px;
+	height: 12px;
+	-webkit-mask-image: url('assets/arrow-left.svg');
+	mask-image: url('assets/arrow-left.svg');
+}
+
+.icon--arrow-right {
+	width: 7px;
+	height: 12px;
+	-webkit-mask-image: url('assets/arrow-right.svg');
+	mask-image: url('assets/arrow-right.svg');
+}
+
+.icon--login-arrow {
+	width: 14px;
+	height: 14px;
+	top: -1px; 
+	-webkit-mask-image: url('assets/login-arrow.svg');
+	mask-image: url('assets/login-arrow.svg');
 }
 
 .page {
