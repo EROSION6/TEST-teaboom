@@ -104,7 +104,7 @@ body {
 .icon--login-arrow {
 	width: 14px;
 	height: 14px;
-	top: -1px; 
+	top: -1px;
 	-webkit-mask-image: url('assets/login-arrow.svg');
 	mask-image: url('assets/login-arrow.svg');
 }
@@ -676,6 +676,26 @@ body {
 	border-radius: 50px;
 }
 
+@media (max-width: 1200px) {
+	.favorite-tip {
+		bottom: auto;
+		top: 50%;
+		right: calc(100% + 8px);
+		left: auto;
+		transform: translate(0, -50%);
+	}
+
+	.favorite-tip::after {
+		display: none;
+	}
+
+	.favorite:hover + .favorite-tip,
+	.favorite:focus-visible + .favorite-tip {
+		opacity: 1;
+		visibility: visible;
+		transform: translate(-4px, -50%);
+	}
+}
 @media (max-width: 900px) {
 	.product {
 		grid-template-columns: minmax(0, 1fr);
